@@ -5,9 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
-/**
- * Created by alvin on 1/15/16.
- */
 public class PowerStatusReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -21,6 +18,6 @@ public class PowerStatusReceiver extends BroadcastReceiver {
             response = "NOT CHARGING";
         }
 
-        Toast.makeText(context, response, Toast.LENGTH_LONG);
+        Toast.makeText(context, response, Toast.LENGTH_LONG).show();
     }
 }
